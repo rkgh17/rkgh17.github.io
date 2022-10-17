@@ -4,6 +4,7 @@ excerpt: "머신 러닝 중요 메서드와 생선분류"
 
 categories:
   - Machine Learning
+  - Python
 tags:
   - [Machine Learning, Python]
 
