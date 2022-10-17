@@ -7,7 +7,7 @@ categories:
 tags:
   - [Machine Learning, Python]
 
-permalink: /machine-learning/plot-the-graph-of-dlib-landmarks-json/
+permalink: /machine-learning/basic/
 
 toc: true
 toc_sticky: true
