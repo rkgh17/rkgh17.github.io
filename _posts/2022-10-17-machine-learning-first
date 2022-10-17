@@ -5,9 +5,9 @@ excerpt: "머신 러닝 중요 메서드와 생선분류"
 categories:
   - machine learning
 tags:
-  - [tag1, tag2]
+  - [Machine Learning]
 
-permalink: /categories1/post-name-here/
+permalink: /machine-learning/first/
 
 toc: true
 toc_sticky: true
