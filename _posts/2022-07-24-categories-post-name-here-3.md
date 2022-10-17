@@ -1,13 +1,13 @@
 ---
-title: "[포스팅 예시] 이곳에 제목을 입력하세요"
-excerpt: "본문의 주요 내용을 여기에 입력하세요"
+title: "머신러닝 기초"
+excerpt: "머신 러닝 중요 메서드와 생선분류"
 
 categories:
-  - Categories3
+  - Machine Learning
 tags:
-  - [tag1, tag2]
+  - [Machine Learning, Python]
 
-permalink: /categories3/post-name-here-3/
+permalink: /machine-learning/basic/
 
 toc: true
 toc_sticky: true
@@ -18,4 +18,4 @@ last_modified_at: 2022-07-24
 
 ## 🦥 본문
 
-본문은 여기에 ...
+
