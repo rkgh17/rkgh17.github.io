@@ -19,14 +19,16 @@ last_modified_at: 2022-10-18
 <br/>
 ## _회귀_
 - 수치 예측
-- 통계 관점에서의 회귀
-    - 해석이 매우 중요 / 분포 / 데이터가 어떤 분포로 이루어져 있는가?를 파악
+- 해석이 매우 중요
+- 데이터가 어떤 분포로 이루어져 있는가를 파악
 - 가설검정 추론
+- 
 <br/>
-- __머신러닝 관점에서의 회귀__
-    - 수치 예측
-    - 오차(Error) == 실체 관축지 - 예측치
-    - 좋은 모델을 선정 == 오차가 적은 것
+## __머신러닝 관점에서의 회귀__
+- 수치 예측
+- 오차(Error) == 실체 관축지 - 예측치
+- 좋은 모델을 선정 == 오차가 적은 것
+- 
 <br/>
 
 ### _데이터셋_
@@ -68,7 +70,8 @@ ax.set_ylabel('weight')
 
 plt.show()
 ```
-![a](/assets/images/posts_img/machine-learning-first/fish_3.png)
+![a](/assets/images/posts_img/machine-learning-sec/fish_3.png)
+
 <br/>
 
 ### _세트 분리 / 모델 예측_
@@ -105,5 +108,7 @@ ax.scatter(100,1033,marker='^')
 
 plt.show()
 ```
-![b](/assets/images/posts_img/machine-learning-first/fish_4.png)
+![b](/assets/images/posts_img/machine-learning-sec/fish_4.png)
+
 <br/>
+
