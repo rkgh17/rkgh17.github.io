@@ -1,5 +1,5 @@
 ---
-title: "머신러닝 기초"
+title: "머신러닝 맛보기"
 excerpt: "Train, Test, Scikit-Learn"
 
 categories:
