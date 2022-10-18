@@ -70,3 +70,25 @@ plt.show()
 ```
 ![a](/assets/images/posts_img/machine-learning-first/fish_1.png)
 <br/><br/>
+### _머신러닝 모형 구현 - KNN_
+<br/>
+```python
+#모형 불러오기
+from sklearn.neighbors import KNeighborsClassifier
+kn = KNeighborsClassifier()
+
+# 모형 학습
+kn.fit(fish_data, fish_target)
+
+# 모형 평가
+kn.score(fish_data, fish_target)
+
+# 예측 (= 배포)
+new_data = [[30,600]]
+kn.predict(new_data)
+# 결과 는 1 == 도미로 예측
+
+ax.scatter(30,600,marker = '^')
+plt.show()
+```
+![a](/assets/images/posts_img/machine-learning-first/fish_2.png)
