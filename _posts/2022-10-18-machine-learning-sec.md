@@ -109,7 +109,35 @@ plt.show()
 ```
 ![b](/assets/images/posts_img/machine-learning-sec/fish_4.png)
 
-
-
 <br/>
 
+## 선형회귀
+- 길이가 100cm인 도미의 무게가 1kg?
+- 예측 실패 -> 새로운 방법
+- 직선을 긋는다
+    - 주어진 데이터 분포에서 가장 작은 오차(군집도가 높은)를 표현할 수 있는 직선을 긋는다.
+
+```python
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+
+lr = LinearRegression()
+
+#선형 회귀 모델을 훈련
+lr.fit(train_input, train_target)
+
+# 50cm농어 결과 = 1241.83860323
+lr.predict([[50]])
+
+fig, ax = plt.subplots(figsize=(10,6))
+ax.scatter(train_input, train_target)
+
+# 50cm 농어 데이터
+ax.scatter(50,1231,marker='^')
+
+# 기울기
+                # x값 * 기울기 + 상수
+ax.plot([15,50],[15 * lr.coef_ + lr.intercept_, 50 * lr.coef_ + lr.intercept_])
+
+plt.show()
+```
