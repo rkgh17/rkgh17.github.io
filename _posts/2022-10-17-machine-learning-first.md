@@ -14,7 +14,7 @@ toc: true
 toc_sticky: true
 
 date: 2022-10-17
-last_modified_at: 2022-10-17
+last_modified_at: 2022-10-18
 ---
 <br/><br/>
 ## _머신러닝 중요 메서드_
