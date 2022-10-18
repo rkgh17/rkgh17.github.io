@@ -17,7 +17,7 @@ date: 2022-10-17
 last_modified_at: 2022-10-18
 ---
 <br/>
-## _머신러닝 중요 메서드_
+## 머신러닝 중요 메서드
 - fit() : 훈련시 사용하는 메서드, 두개의 데이터가 들어감.
     - 독립변수 : fish_data(길이, 몸무게)
     - 종속변수 : fish_target
@@ -29,14 +29,9 @@ last_modified_at: 2022-10-18
 - suffle : 주어진 배열을 랜덤하게 섞는다
 <br/><br/>
 
-## _생선 분류 문제_
-
-<br/>
-
+## 생선 분류 문제
 
 ### _데이터 구성_
-
-
 
 ```python
 #도미 35
@@ -191,5 +186,5 @@ print(test_input.shape, test_target.shape)
 kn = KNeighborsClassifier(n_neighbors = 5)
 kn = kn.fit(train_input, train_target)
 kn.score(test_input, test_target)
-# 결과 1.0
+# 결과 1.0 -> 섞어서 검사하니 알맞은 결과 도출.
 ```
