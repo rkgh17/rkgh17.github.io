@@ -55,6 +55,7 @@ fish_target = [1] * 35 + [0] * 14 # 라벨링 : 도미1 / 빙어0
 
 ### 데이터 시각화
 <br/>
+
 ```python
 import matplotlib.pyplot as plt
 fig, ax = plt.subplots(figsize = (10,6))
