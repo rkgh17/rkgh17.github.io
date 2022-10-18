@@ -16,18 +16,9 @@ toc_sticky: true
 date: 2022-10-17
 last_modified_at: 2022-10-17
 ---
-
-
-
-
-
-
-
-
+<br/><br/>
 ## 머신러닝 중요 메서드
-
-
-
+<br/>
 - fit() : 훈련시 사용하는 메서드, 두개의 데이터가 들어감.
     - 독립변수 : fish_data(길이, 몸무게)
     - 종속변수 : fish_target
@@ -37,21 +28,13 @@ last_modified_at: 2022-10-17
     - 실무에서는 평가지표 함수를 사용!
 - seed() : 초깃값이 같으면 동일한 난수를 뽑는다. 실험 재현성
 - suffle : 주어진 배열을 랜덤하게 섞는다
-
-
-
-
-
-
-
-
-
+<br/><br/>
 ## 생선 분류 문제
-
+<br/>
 
 
 ### 데이터 구성
-
+<br/>
 
 
 ```python
@@ -67,10 +50,11 @@ weight = bream_weight + smelt_weight
 fish_data = [[l, w] for l, w in zip(length, weight)]
 fish_target = [1] * 35 + [0] * 14 # 라벨링 : 도미1 / 빙어0
 ```
-
+<br/>
 
 
 ### 데이터 시각화
+<br/>
 ```python
 import matplotlib.pyplot as plt
 fig, ax = plt.subplots(figsize = (10,6))
@@ -82,3 +66,4 @@ ax.set_ylabel('weight')
 plt.show()
 ```
 ![a](/assets/images/posts_img/machine-learning-first/fish_1.png)
+<br/><br/>
