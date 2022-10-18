@@ -8,7 +8,7 @@ categories:
 tags:
   - [Machine Learning, Python]
 
-permalink: /machine-learning/basic/
+permalink: /machine-learning/regression/
 
 toc: true
 toc_sticky: true
@@ -16,19 +16,18 @@ toc_sticky: true
 date: 2022-10-17
 last_modified_at: 2022-10-18
 ---
-<br/>
 ## _회귀_
 - 수치 예측
 - 해석이 매우 중요
 - 데이터가 어떤 분포로 이루어져 있는가를 파악
 - 가설검정 추론
-- 
+
 <br/>
 ## __머신러닝 관점에서의 회귀__
 - 수치 예측
 - 오차(Error) == 실체 관축지 - 예측치
 - 좋은 모델을 선정 == 오차가 적은 것
-- 
+ 
 <br/>
 
 ### _데이터셋_
@@ -109,6 +108,8 @@ ax.scatter(100,1033,marker='^')
 plt.show()
 ```
 ![b](/assets/images/posts_img/machine-learning-sec/fish_4.png)
+
+
 
 <br/>
 
