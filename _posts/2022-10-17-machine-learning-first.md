@@ -28,13 +28,15 @@ last_modified_at: 2022-10-18
     - 실무에서는 평가지표 함수를 사용!
 - seed() : 초깃값이 같으면 동일한 난수를 뽑는다. 실험 재현성
 - suffle : 주어진 배열을 랜덤하게 섞는다
-<br/><br/>
-## _생선 분류 문제_
 <br/>
+
+## _생선 분류 문제_
+
+
 
 
 ### _데이터 구성_
-<br/>
+
 
 
 ```python
@@ -56,7 +58,6 @@ fish_target = [1] * 35 + [0] * 14 # 라벨링 : 도미1 / 빙어0
 
 
 ### _데이터 시각화_
-<br/>
 
 ```python
 import matplotlib.pyplot as plt
@@ -71,7 +72,6 @@ plt.show()
 ![a](/assets/images/posts_img/machine-learning-first/fish_1.png)
 <br/><br/>
 ### _머신러닝 모형 구현 - KNN_
-<br/>
 
 ```python
 #모형 불러오기
@@ -100,7 +100,6 @@ plt.show()
 - 예측값, 평가지표 산출 시 1.0이 나옴. -> 정답을 보고 푸는것과 다름 없음
 - 훈련 세트 : 훈련 시에 사용되는 데이터
 - 테스트 세트 : 평가 시에 사용되는 데이터
-<br/>
 
 ```python
 #훈련 세트와 테스트 세트 분류
@@ -114,11 +113,12 @@ kn = kn.fit(train_input, train_target)
 kn.score(test_input, test_target)
 # 결과 = 0
 ```
+<br/>
 - 모형 만들고, 모형 테스트
 - 결과가 0이 나온 이유?
 - 학습을 도미로 함 / 평가는 빙어가지고 테스트
 - -> 학습을 섞어서 할 필요가 있다
-<br/><br/>
+<br/>
 
 
 ```python
@@ -147,6 +147,7 @@ ax.set_ylabel('weight')
 plt.show()
 ```
 ![a](/assets/images/posts_img/machine-learning-first/train.png)
+<br/>
 
 ### 머신러닝 모형 개발
 
@@ -159,6 +160,7 @@ kn.score(test_input, test_target)
 print(kn.predict(test_input))
 # 결과 : [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
 ```
+<br/>
 
 ## _Scikit-Learn 라이브러리를 활용한 세트 분리_
 
