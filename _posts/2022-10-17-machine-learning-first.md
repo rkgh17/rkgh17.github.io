@@ -72,6 +72,7 @@ plt.show()
 <br/><br/>
 ### _머신러닝 모형 구현 - KNN_
 <br/>
+
 ```python
 #모형 불러오기
 from sklearn.neighbors import KNeighborsClassifier
