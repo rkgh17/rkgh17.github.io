@@ -13,7 +13,7 @@ permalink: /machine-learning/regression/
 toc: true
 toc_sticky: true
 
-date: 2022-10-17
+date: 2022-10-18
 last_modified_at: 2022-10-18
 ---
 ## _회귀_
