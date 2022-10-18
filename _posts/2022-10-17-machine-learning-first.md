@@ -16,9 +16,8 @@ toc_sticky: true
 date: 2022-10-17
 last_modified_at: 2022-10-18
 ---
-<br/><br/>
-## _머신러닝 중요 메서드_
 <br/>
+## _머신러닝 중요 메서드_
 - fit() : 훈련시 사용하는 메서드, 두개의 데이터가 들어감.
     - 독립변수 : fish_data(길이, 몸무게)
     - 종속변수 : fish_target
@@ -28,11 +27,11 @@ last_modified_at: 2022-10-18
     - 실무에서는 평가지표 함수를 사용!
 - seed() : 초깃값이 같으면 동일한 난수를 뽑는다. 실험 재현성
 - suffle : 주어진 배열을 랜덤하게 섞는다
-<br/>
+<br/><br/>
 
 ## _생선 분류 문제_
 
-
+<br/>
 
 
 ### _데이터 구성_
@@ -113,7 +112,6 @@ kn = kn.fit(train_input, train_target)
 kn.score(test_input, test_target)
 # 결과 = 0
 ```
-<br/>
 - 모형 만들고, 모형 테스트
 - 결과가 0이 나온 이유?
 - 학습을 도미로 함 / 평가는 빙어가지고 테스트
