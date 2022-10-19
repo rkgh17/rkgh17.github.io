@@ -75,7 +75,7 @@ print(lr.score(test_poly, test_target))
 # 0.9903183436982124
 # 0.9714559911594134
 
-#여러 규제값 체크하기
+#최적 Degree 체크하기
 for idx in range(2,5):
   poly = PolynomialFeatures(degree = idx ,include_bias = False)
   poly.fit(train_input)
@@ -90,7 +90,7 @@ for idx in range(2,5):
   print('-'*30)
 ```
 ![a](/assets/images/posts_img/machine-learning-3/degree.png)
-- 최적의 규제 강도 : Degree 2
+- 최적의 Degree : 2
 
 <br/><br/>
 
