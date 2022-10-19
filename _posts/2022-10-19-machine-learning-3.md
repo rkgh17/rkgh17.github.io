@@ -1,6 +1,6 @@
 ---
 title: "특성공학과 규제"
-excerpt: "Ridge, Lassho 맛보기"
+excerpt: "Ridge, Lasso 맛보기"
 
 categories:
   - Machine Learning
@@ -97,7 +97,7 @@ for idx in range(2,5):
 ## __규제 (Regularization)__
 - 훈련 세트를 과도하게 학습하지 않도록 하는게 목표
 - ex)선형회귀에서 기울기의 크기를 조절
-- • [https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler)
+- [https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html#sklearn.preprocessing.StandardScaler)
 
 ```python
 from sklearn.preprocessing import StandardScaler
@@ -157,7 +157,7 @@ plt.show()
 
 <br/>
 
-## Lasso
+### _Lasso regression_
 
 - [https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html#sklearn.linear_model.Lasso](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html#sklearn.linear_model.Lasso)
 
