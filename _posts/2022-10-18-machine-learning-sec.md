@@ -14,7 +14,7 @@ toc: true
 toc_sticky: true
 
 date: 2022-10-18
-last_modified_at: 2022-10-18
+last_modified_at: 2022-10-19
 ---
 ## _회귀_
 - 수치 예측
