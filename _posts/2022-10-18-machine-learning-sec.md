@@ -141,3 +141,26 @@ ax.plot([15,50],[15 * lr.coef_ + lr.intercept_, 50 * lr.coef_ + lr.intercept_])
 
 plt.show()
 ```
+![c](/assets/images/posts_img/machine-learning-sec/fish_5.png)
+
+<br/>
+
+## 다항회귀
+
+```python
+fig, ax = plt.subplots(figsize=(10,6))
+point = np.arange(10,50)
+
+# 훈련 세트의 산점도
+ax.scatter(train_input, train_target)
+
+# 2차 방정식 그래프
+ax.plot(point, 1.01 * point ** 2 - 21.6 * point + 116.05, color='red')
+
+ax.scatter(50,1574,marker='^')
+ax.scatter(10,1.9,marker='^')
+
+plt.show()
+```
+
+![d](/assets/images/posts_img/machine-learning-sec/fish_6.png)
