@@ -26,10 +26,12 @@ last_modified_at: 2022-10-19
 - 데이터 n개를 다양한 방법으로 활용한다
 
 ```python
-#데이터 셋
 import pandas as pd
 import numpy as np
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import PolynomialFeatures
 
+#데이터 셋
 df = pd.read_csv('https://bit.ly/perch_csv_data')
 # 농어의 길이, 높이, 너비
 perch_full = df.to_numpy()
@@ -52,8 +54,6 @@ train_input, test_input, train_target, test_target = train_test_split(
 train_input.shape, test_input.shape, train_target.shape, test_target.shape # ((42, 3), (14, 3), (42,), (14,))
 
 #데이터 특성 변환
-from sklearn.preprocessing import PolynomialFeatures
-
 poly = PolynomialFeatures(include_bias = False)
 poly.fit(train_input)
 
@@ -65,7 +65,6 @@ poly.get_feature_names_out()
 # array(['x0', 'x1', 'x2', 'x0^2', 'x0 x1', 'x0 x2', 'x1^2', 'x1 x2', 'x2^2'], dtype=object)
 
 #모형 학습
-from sklearn.linear_model import LinearRegression
 lr = LinearRegression()
 lr.fit(train_poly, train_target)
 
