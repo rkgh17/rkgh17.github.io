@@ -1,6 +1,6 @@
 ---
-title: "교차검증 & 샘플링 & 그리드 서치"
-excerpt: "Cross Validation, Grid Search, Sampling"
+title: "교차검증 & 하이퍼파라미터"
+excerpt: "Cross Validation, Grid Search, Random Search"
 
 categories:
   - Machine Learning
@@ -72,13 +72,35 @@ np.mean(scores['test_score'])
 # 0.855300214703487
 ```
 
-## 그리드 서치 - 하이퍼파라미터
+- 기존 방법 : 임의 추출 방식(무작위)
+- 새로운 방법 : __StratfiedkFold__ 활용
+    - 데이터를 분리 할때 덜 편향적으로 섞이게 하자
+    - 통계용어 : 층화추출 (비율에 근거해서 추출하기)
+    
+```python
+from sklearn.model_selection import StratifiedKFold
+from sklearn.model_selection import cross_validate
 
-- 기존) 수동으로 조정, 하나씩 값을 확인하는 형태
+scores = cross_validate(dt, train_input, train_target, cv = StratifiedKFold())
+np.mean(scores['test_score'])
+#0.855300214703487
+
+# n_splits : 몇번 교차 검증을 할건지
+splitter = StratifiedKFold(n_splits = 10, shuffle = True, random_state=42)
+scores = cross_validate(dt, train_input, train_target, cv = splitter)
+np.mean(scores['test_score'])
+#0.8574181117533719
+```
+
+<br/><br/>
+
+## __하이퍼파라미터(Hyperparameter)__
+- __그리드 서치(Gird Search)__
+  - 기존 코드) 수동으로 조정, 하나씩 값을 확인하는 형태
     - ridge(), Lasso(), alpha값 조정
     - decision tree, max_depth값 조정
-- 현재 ) 파라미터 조정 자동화 --> 머신러닝 엔지니어
-- [https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html)
+    - 현재) 파라미터 조정 자동화 --> 머신러닝 엔지니어의 일
+    - [https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html)
 
 ```python
 from sklearn.model_selection import GridSearchCV
@@ -114,3 +136,60 @@ result
 ```
 ![a](/assets/images/posts_img/machine-leaning-valgrdsmp/params.png)
 
+```python
+import numpy as np
+from sklearn.model_selection import GridSearchCV
+from sklearn.tree import DecisionTreeClassifier
+
+# 여러 하이퍼파라미터 전달
+params = {'max_depth' : [2,3,4,5,6,7],
+ 					 # min_impurity_decrease : 노드 분할 시, 불순도 감소 최저량 지정
+          'min_impurity_decrease' : np.arange(0.0001, 0.001, 0.01),
+          'min_samples_split' : range(2, 100, 10)
+          }
+gs = GridSearchCV(dt, params, n_jobs=-1)
+gs.fit(train_input, train_target)
+
+# 최적의 파라미터
+print(gs.best_params_)
+# {'max_depth': 7, 'min_impurity_decrease': 0.0001, 'min_samples_split': 92}
+
+# 최적의 결과
+best_dt = gs.best_estimator_
+print(best_dt.score(train_input, train_target))
+# 0.8793534731575909
+```
+
+- __랜덤 서치(Random Search)__
+  -  그리드 서치는 여러 하이퍼파라미터 전달
+  -  랜덤 서치는 매개변수가 샘플링할 수 있는 객체의 범위를 전달 - 랜덤 파라미터
+
+```python
+from scipy.stats import uniform, randint
+from sklearn.model_selection import RandomizedSearchCV
+import numpy as np
+
+# 랜덤 파라미터
+params = {'max_depth' : randint(2,50),
+          'min_impurity_decrease' : uniform(0.0001, 0.1),
+          'min_samples_split' : randint(2,50)
+          }
+
+# 모형 만들기
+dt =  DecisionTreeClassifier(random_state = 42)
+
+# 랜덤 서치
+rs = RandomizedSearchCV(dt, params, n_iter = 100 , random_state = 42 ,n_jobs = -1)
+
+rs.fit(train_input, train_target)
+
+# 최적의 파라미터
+print(rs.best_params_)
+# {'max_depth': 39, 'min_impurity_decrease': 0.00017787658410143285, 
+#  'min_samples_split': 22}
+
+# 최적의 결과
+best_dt = rs.best_estimator_
+print(best_dt.score(train_input, train_target))
+# 0.9053299980758129
+```
