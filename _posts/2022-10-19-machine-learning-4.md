@@ -107,7 +107,7 @@ plt.show()
 ## _로지스틱 회귀로 이진 분류 수행하기_
 
 - 현재 데이터 : train_scaled & test_scaled
-- 현재 데이터에는 물고기들의 정보가 없기 때문에
+- 현재 데이터에는 물고기들의 이름이 없기 때문에
 - train_target, test_target과 Boolean Indexing 수행
 - __Boolean Indexing__ : True, False 값을 활용함
 
