@@ -36,6 +36,11 @@ plt.show()
 ![a](/assets/images/posts_img/machine-learning-4/fishes.png)
 
 ```python
+import numpy as np
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.neighbors import KNeighborsClassifier
+
 # 전처리 - 변수 행렬로 변환하기 (데이터프레임으론 머신러닝 x)
 # 독립변수
 fish_input = fish[['Weight', 'Length', 'Diagonal', 'Height', 'Width']].to_numpy()
@@ -43,15 +48,12 @@ fish_input = fish[['Weight', 'Length', 'Diagonal', 'Height', 'Width']].to_numpy(
 fish_target = fish['Species'].to_numpy()
 
 #데이터 세트 분리
-from sklearn.model_selection import train_test_split
-
 train_input, test_input, train_target, test_target = train_test_split(
     fish_input, fish_target, random_state=42
 )
 #train_input.shape, test_input.shape, train_target.shape, test_target.shape
 
 #표준화
-from sklearn.preprocessing import StandardScaler
 ss = StandardScaler() # 표준점수
 ss.fit(train_input)
 
@@ -59,12 +61,8 @@ train_scaled = ss.transform(train_input)
 test_scaled = ss.transform(test_input)
 
 # KNN 머신 러닝으로 확률 예측
-from sklearn.neighbors import KNeighborsClassifier
-
 kn = KNeighborsClassifier(n_neighbors=3)
 kn.fit(train_scaled, train_target)
-
-import numpy as np
 
 proba = kn.predict_proba(test_scaled[:5])
 # 소수점 4자리
