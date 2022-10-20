@@ -95,12 +95,12 @@ np.mean(scores['test_score'])
 <br/><br/>
 
 ## __하이퍼파라미터(Hyperparameter)__
-- __그리드 서치(Gird Search)__
-  - 기존 코드) 수동으로 조정, 하나씩 값을 확인하는 형태
-    - ridge(), Lasso(), alpha값 조정
-    - decision tree, max_depth값 조정
-    - 현재) 파라미터 조정 자동화 --> 머신러닝 엔지니어의 일
-    - [https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html)
+### __그리드 서치(Gird Search)__
+- 기존 코드) 수동으로 조정, 하나씩 값을 확인하는 형태
+  - ridge(), Lasso(), alpha값 조정
+  - decision tree, max_depth값 조정
+  - 현재) 파라미터 조정 자동화 --> 머신러닝 엔지니어의 일
+  - [https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html)
 
 ```python
 from sklearn.model_selection import GridSearchCV
@@ -160,12 +160,12 @@ print(best_dt.score(train_input, train_target))
 # 0.8793534731575909
 ```
 
-- __랜덤 서치(Random Search)__
-  -  그리드 서치는 여러 하이퍼파라미터 전달
-  -  랜덤 서치는 매개변수가 샘플링할 수 있는 객체의 범위를 전달 - 랜덤 파라미터
+### __랜덤 서치(Random Search)__
+- 그리드 서치는 여러 하이퍼파라미터 전달
+- 랜덤 서치는 매개변수가 샘플링할 수 있는 객체의 범위를 전달 - 랜덤 파라미터
 
 ```python
-from scipy.stats import uniform, randint
+from scipy.stats import uniform, randint # 랜덤 실수, 정수 
 from sklearn.model_selection import RandomizedSearchCV
 import numpy as np
 
