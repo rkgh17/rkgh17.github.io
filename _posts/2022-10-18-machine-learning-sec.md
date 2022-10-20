@@ -14,28 +14,25 @@ toc: true
 toc_sticky: true
 
 date: 2022-10-18
-last_modified_at: 2022-10-19
+last_modified_at: 2022-10-20
 ---
-## _회귀_
+## __회귀(Regression)__
 - 수치 예측
 - 해석이 매우 중요
 - 데이터가 어떤 분포로 이루어져 있는가를 파악
 - 가설검정 추론
 
-<br/>
-## __머신러닝 관점에서의 회귀__
+### __머신러닝 관점에서의 회귀__
 - 수치 예측
 - 오차(Error) == 실체 관축지 - 예측치
 - 좋은 모델을 선정 == 오차가 적은 것
- 
-<br/>
-
-### _데이터셋_
 
 ```python
 import numpy as np
+import matplotlib.pyplot as plt
 
-#농어 길이
+# 데이터 셋
+# 농어 길이
 perch_length = np.array(
     [8.4, 13.7, 15.0, 16.2, 17.4, 18.0, 18.7, 19.0, 19.6, 20.0, 
      21.0, 21.0, 21.0, 21.3, 22.0, 22.0, 22.0, 22.0, 22.0, 22.5, 
@@ -44,7 +41,7 @@ perch_length = np.array(
      36.5, 36.0, 37.0, 37.0, 39.0, 39.0, 39.0, 40.0, 40.0, 40.0, 
      40.0, 42.0, 43.0, 43.0, 43.5, 44.0]
      )
-#농어 무게
+# 농어 무게
 perch_weight = np.array(
     [5.9, 32.0, 40.0, 51.5, 70.0, 100.0, 78.0, 80.0, 85.0, 85.0, 
      110.0, 115.0, 125.0, 130.0, 120.0, 120.0, 130.0, 135.0, 110.0, 
@@ -54,13 +51,8 @@ perch_weight = np.array(
      820.0, 850.0, 900.0, 1015.0, 820.0, 1100.0, 1000.0, 1100.0, 
      1000.0, 1000.0]
      )
-```
-<br/>
 
-### _데이터 시각화_
-
-```python
-import matplotlib.pyplot as plt
+# 데이터 시각화
 fig, ax = plt.subplots(figsize = (10,6))
 ax.scatter(perch_length, perch_weight)
 ax.scatter(perch_length, perch_weight)
@@ -73,7 +65,7 @@ plt.show()
 
 <br/>
 
-### _세트 분리 / 모델 예측_
+### __세트 분리 / 모델 예측__
 
 ```python
 from sklearn.model_selection import train_test_split
