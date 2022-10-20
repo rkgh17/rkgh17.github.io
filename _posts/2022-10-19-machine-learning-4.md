@@ -84,6 +84,8 @@ print(np.round(proba, decimals=4))
     - 시그모이드 함수에 z값 대입 -> 확률값 계산
     - 확률값이 매우 큰 음수 --> 0
     - 확률값이 매우 큰 양수 --> 1
+ 
+
 ```python
 import matplotlib.pyplot as plt
 
