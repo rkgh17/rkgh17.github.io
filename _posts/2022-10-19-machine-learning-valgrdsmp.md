@@ -112,5 +112,5 @@ result = pd.DataFrame({
 
 result
 ```
-![a](/assets/images/posts_img/machine-learning-valgrdsmp/params.png)
+![a](/assets/images/posts_img/machine-leaning-valgrdsmp/params.png)
 
