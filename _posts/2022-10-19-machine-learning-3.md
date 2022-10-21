@@ -4,9 +4,8 @@ excerpt: "Ridge, Lasso 맛보기"
 
 categories:
   - Machine Learning
-  - Python
 tags:
-  - [Machine Learning, Python]
+  - [Machine Learning]
 
 permalink: /machine-learning/ridge_rasso/
 
