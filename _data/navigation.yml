@@ -22,8 +22,8 @@ categories:
     url: /categories/machine-learning/
   - title: "Python"
     children:
-    - title: "python"
+    - title: "Python"
       url: /categories/python/
-    - title: "python_basic"
+    - title: "Python_basic"
       url: /categories/python_basic/
     
