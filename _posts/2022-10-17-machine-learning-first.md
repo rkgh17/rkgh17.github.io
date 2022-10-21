@@ -4,7 +4,6 @@ excerpt: "Train, Test, Scikit-Learn"
 
 categories:
   - Machine Learning
-  - Python
 tags:
   - [Machine Learning]
 
