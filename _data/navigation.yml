@@ -23,6 +23,7 @@ categories:
   - title: "Python"
     children:
     - title: "python"
-      url : /categories/python/
-    - title: "python"
+      url: /categories/python/
+    - title: "python_basic"
+      url: /categories/python_basic/
     
