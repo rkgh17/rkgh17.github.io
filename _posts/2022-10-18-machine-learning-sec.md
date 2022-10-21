@@ -4,9 +4,8 @@ excerpt: "선형회귀와 다항회귀를 알아보자 "
 
 categories:
   - Machine Learning
-  - Python
 tags:
-  - [Machine Learning, Python]
+  - [Machine Learning]
 
 permalink: /machine-learning/regression/
 
