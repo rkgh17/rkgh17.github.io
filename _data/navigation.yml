@@ -21,4 +21,8 @@ categories:
   - title: "Machine Learning"
     url: /categories/machine-learning/
   - title: "Python"
-    url: /categories/python/
+    children:
+    - title: "python"
+      url : /categories/python/
+    - title: "python"
+    
