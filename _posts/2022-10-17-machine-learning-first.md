@@ -6,7 +6,7 @@ categories:
   - Machine Learning
   - Python
 tags:
-  - [Machine Learning, Python]
+  - [Machine Learning]
 
 permalink: /machine-learning/basic/
 
