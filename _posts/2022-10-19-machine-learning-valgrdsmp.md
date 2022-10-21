@@ -4,9 +4,8 @@ excerpt: "Cross Validation, Grid Search, Random Search"
 
 categories:
   - Machine Learning
-  - Python
 tags:
-  - [Machine Learning, Python]
+  - [Machine Learning]
 
 permalink: /machine-learning/valgrdsmp/
 
