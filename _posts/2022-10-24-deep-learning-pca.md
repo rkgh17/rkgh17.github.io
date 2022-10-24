@@ -53,7 +53,7 @@ ax[2].imshow(fruits[200], cmap='gray_r')
 plt.show()
 ```
 
-![a](/assets/images/posts_img/deep-leaning-pca/download.png)
+![a](/assets/images/posts_img/deep-learning-pca/download.png)
 
 ```python
 # 3차원 데이터들 → 2차원 or 1차원으로 변경
@@ -112,7 +112,7 @@ def draw_fruits(arr, ratio=1):
 draw_fruits(pca.components_.reshape(-1, 100, 100))
 ```
 
-![b](/assets/images/posts_img/deep-leaning-pca/download (1).png)
+![b](/assets/images/posts_img/deep-learning-pca/download (1).png)
 
 1000개의 특성을 50개 주성분으로 표현해도 데이터의 의미(사과모양의 구)는 보전
 
@@ -137,11 +137,11 @@ for i in [0,100,200]:
   print('\n')
 ```
 
-![c](/assets/images/posts_img/deep-leaning-pca/download (2).png)
+![c](/assets/images/posts_img/deep-learning-pca/download (2).png)
 
-![d](/assets/images/posts_img/deep-leaning-pca/download (3).png)
+![d](/assets/images/posts_img/deep-learning-pca/download (3).png)
 
-![e](/assets/images/posts_img/deep-leaning-pca/download (4).png)
+![e](/assets/images/posts_img/deep-learning-pca/download (4).png)
 
 → 원래의 데이터와 완벽히 같지는 않지만 어느정도 보임
 
@@ -160,7 +160,7 @@ plt.show()
 # 주성분 n_components = 10으로해도 50이랑 그닥 그렇게 다르지는 않다
 ```
 
-![f](/assets/images/posts_img/deep-leaning-pca/download (5).png)
+![f](/assets/images/posts_img/deep-learning-pca/download (5).png)
 
 ---
 
