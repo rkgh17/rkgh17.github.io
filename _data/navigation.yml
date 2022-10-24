@@ -18,12 +18,11 @@ main:
 # sidebar navigation (categories)
 # 2022.02.15 sidebar update : simple ver.
 categories:
-  - title: "Machine Learning"
-    url: /categories/machine-learning/
   - title: "Python"
     children:
     - title: "Python"
       url: /categories/python/
     - title: "Python_basic"
       url: /categories/python_basic/
-    
+    - title: "Machine Learning"
+      url: /categories/machine-learning/
