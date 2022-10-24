@@ -16,9 +16,11 @@ date: 2022-10-19
 last_modified_at: 2022-10-19
 ---
 
+---
+
 # 특성공학과 규제
 
-<br/>
+---
 
 ## __특성공학 (Feature Engineering)__
 - 특정 애플리케이션에 가장 적합한 데이터 표현을 찾는 것
@@ -90,7 +92,7 @@ for idx in range(2,5):
 ![a](/assets/images/posts_img/machine-learning-3/degree.png)
 - 최적의 Degree : 2
 
-<br/><br/>
+---
 
 ## __규제 (Regularization)__
 - 훈련 세트를 과도하게 학습하지 않도록 하는게 목표
@@ -106,13 +108,13 @@ train_scaled = ss.transform(train_poly)
 test_scaled = ss.transform(test_poly)
 ```
 
-<br/>
+
 
 ### _Ridge회귀와 Rasso회귀_
 - Ridge : 계수를 제곱한 값을 기준으로 규제를 적용
 - Rasso : 계수의 절댓값을 기준으로 규제를 적용
 
-<br/>
+
 
 ### _Ridge regression_
 - 릿지 회귀서는 alpha값 조정을 통해 계수를 규제한다. -> Hyperparameter tuning
@@ -153,7 +155,7 @@ plt.show()
 ```
 ![b](/assets/images/posts_img/machine-learning-3/Ridge.png)
 
-<br/>
+
 
 ### _Lasso regression_
 

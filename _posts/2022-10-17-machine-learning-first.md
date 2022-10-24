@@ -28,7 +28,8 @@ last_modified_at: 2022-10-20
     - 실무에서는 평가지표 함수를 사용!
 - seed() : 초깃값이 같으면 동일한 난수를 뽑는다. 실험 재현성
 - suffle : 주어진 배열을 랜덤하게 섞는다
-<br/><br/>
+
+---
 
 ## __생선 분류 예제__
 
@@ -60,7 +61,8 @@ ax.set_ylabel('weight')
 plt.show()
 ```
 ![a](/assets/images/posts_img/machine-learning-first/fish_1.png)
-<br/><br/>
+
+
 ### __머신러닝 모형 구현 - KNN__
 - K-Nearest Neighbor
   - 데이터를 가장 가까운 속성에 따라 분류하는 알고리즘
@@ -89,7 +91,6 @@ plt.show()
 ```
 ![a](/assets/images/posts_img/machine-learning-first/fish_2.png)
 
-<br/><br/>
 
 ---
 
@@ -146,7 +147,7 @@ plt.show()
 ```
 ![a](/assets/images/posts_img/machine-learning-first/train.png)
 
-<br/>
+
 
 
 ### KNN 머신러닝 모형 개발
@@ -160,6 +161,7 @@ kn.score(test_input, test_target)
 print(kn.predict(test_input))
 # 결과 : [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
 ```
+
 ---
 
 ## __Scikit-Learn 라이브러리를 활용한 세트 분리__

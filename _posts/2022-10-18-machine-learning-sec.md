@@ -15,6 +15,9 @@ toc_sticky: true
 date: 2022-10-18
 last_modified_at: 2022-10-20
 ---
+
+---
+
 ## __회귀(Regression)__
 - 수치 예측
 - 해석이 매우 중요
@@ -62,7 +65,7 @@ plt.show()
 ```
 ![a](/assets/images/posts_img/machine-learning-sec/fish_3.png)
 
-<br/>
+
 
 ### __세트 분리 / 모델 예측__
 
@@ -100,7 +103,7 @@ plt.show()
 ```
 ![b](/assets/images/posts_img/machine-learning-sec/fish_4.png)
 
-<br/>
+---
 
 ## 선형회귀
 - 길이가 100cm인 도미의 무게가 1kg?
@@ -134,7 +137,7 @@ plt.show()
 ```
 ![c](/assets/images/posts_img/machine-learning-sec/fish_5.png)
 
-<br/>
+---
 
 ## 다항회귀
 

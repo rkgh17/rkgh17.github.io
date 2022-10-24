@@ -22,7 +22,7 @@ categories:
     children:
     - title: "Python"
       url: /categories/python/
-    - title: "Python_basic"
-      url: /categories/python_basic/
     - title: "Machine Learning"
       url: /categories/machine-learning/
+    - title: "Deep Learning"
+      url: /categories/deep-learning/

@@ -15,12 +15,15 @@ toc_sticky: true
 date: 2022-10-20
 last_modified_at: 2022-10-20
 ---
+---
 
-## __교차검증(Cross Validation)__
+# __교차검증(Cross Validation)__
 - 모델 학습 시 데이터를 훈련용과 검증용으로 교차
 - Train / Validation / Test
   - Train : 학습 셋
   - Validation : 검증 셋
+
+---
 
 ```python
 import pandas as pd
@@ -91,7 +94,7 @@ np.mean(scores['test_score'])
 #0.8574181117533719
 ```
 
-<br/><br/>
+---
 
 ## __하이퍼파라미터(Hyperparameter)__
 ### __그리드 서치(Gird Search)__
