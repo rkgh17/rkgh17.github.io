@@ -269,8 +269,8 @@ plt.imshow(pixels_low[4].reshape(128,128), cmap='gray')
 plt.show()
 ```
 
-![8](/assets/images/posts_img/deep-learning-opencv/opencv9.png)
+![8](/assets/images/posts_img/deep-learning-opencv/opencv8.png)
 
 <br/>
 
-![9](/assets/images/posts_img/deep-learning-opencv/opencv8.png)
+![9](/assets/images/posts_img/deep-learning-opencv/opencv9.png)
