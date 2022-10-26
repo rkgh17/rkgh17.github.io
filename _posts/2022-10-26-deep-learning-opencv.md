@@ -204,8 +204,7 @@ img = cv2.imread(DATA_PATH + '/ants/swiss-army-ant.jpg', 0)
 ret, bin_img = cv2.threshold(img, 128,255,cv2.THRESH_BINARY)
 
 # 이미지 압축
-kernel = np.ones((3,3), np.uint8) # 3*3 크기의 필터
-								  # np.uint8 : 데이터 타입
+kernel = np.ones((3,3), np.uint8) # (3*3) : 필터 크기 / np.uint8 : 데이터타입
 
 img_el = cv2.erode(bin_img, kernel, iterations=1) # 필터 kernel를 적용하고 압축
 plt.imshow(img_el, cmap='gray')
