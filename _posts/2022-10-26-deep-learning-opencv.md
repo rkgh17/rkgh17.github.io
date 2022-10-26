@@ -16,6 +16,7 @@ date: 2022-10-26
 last_modified_at: 2022-10-26
 ---
 
+---
 
 ## 시작하기 전에
 
@@ -204,7 +205,7 @@ ret, bin_img = cv2.threshold(img, 128,255,cv2.THRESH_BINARY)
 
 # 이미지 압축
 kernel = np.ones((3,3), np.uint8) # 3*3 크기의 필터
-																	# np.uint8 : 데이터 타입
+								  # np.uint8 : 데이터 타입
 
 img_el = cv2.erode(bin_img, kernel, iterations=1) # 필터 kernel를 적용하고 압축
 plt.imshow(img_el, cmap='gray')
@@ -269,5 +270,7 @@ plt.show()
 ```
 
 ![8](/assets/images/posts_img/deep-learning-opencv/opencv9.png)
+
+<br/>
 
 ![9](/assets/images/posts_img/deep-learning-opencv/opencv8.png)
