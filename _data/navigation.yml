@@ -20,8 +20,6 @@ main:
 categories:
   - title: "Python"
     children:
-    - title: "Python"
-      url: /categories/python/
     - title: "Machine Learning"
       url: /categories/machine-learning/
     - title: "Deep Learning"
