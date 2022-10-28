@@ -16,6 +16,8 @@ date: 2022-10-17
 last_modified_at: 2022-10-20
 ---
 
+# Train, Test, Scikit-Learn
+
 ---
 
 ## __머신러닝 중요 메서드__

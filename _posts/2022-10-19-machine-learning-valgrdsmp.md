@@ -1,6 +1,6 @@
 ---
-title: "교차검증 & 하이퍼파라미터"
-excerpt: "Cross Validation, Grid Search, Random Search"
+title: "Cross Validation & Hyperparameter"
+excerpt: "교차검증, 하이퍼파라미터 예제코드를 통한 개념 이해 "
 
 categories:
   - Machine Learning
@@ -15,15 +15,18 @@ toc_sticky: true
 date: 2022-10-20
 last_modified_at: 2022-10-20
 ---
+
+# 교차검증, 하이퍼파라미터 예제코드를 통한 개념 이해
+
 ---
 
-# __교차검증(Cross Validation)__
-- 모델 학습 시 데이터를 훈련용과 검증용으로 교차
+## __교차검증(Cross Validation)__
+- 모델 학습 시 데이터를 훈련용과 검증용으로 교차하자
+    - 이유 : 과적합 방지
 - Train / Validation / Test
   - Train : 학습 셋
   - Validation : 검증 셋
 
----
 
 ```python
 import pandas as pd
@@ -74,7 +77,9 @@ np.mean(scores['test_score'])
 # 0.855300214703487
 ```
 
-- 기존 방법 : 임의 추출 방식(무작위)
+### 층화추출
+
+- 기존 의 임의 추출 방식(무작위)은 데이터가 편향적임
 - 새로운 방법 : __StratfiedkFold__ 활용
     - 데이터를 분리 할때 덜 편향적으로 섞이게 하자
     - 통계용어 : 층화추출 (비율에 근거해서 추출하기)
@@ -97,11 +102,14 @@ np.mean(scores['test_score'])
 ---
 
 ## __하이퍼파라미터(Hyperparameter)__
+
+- 모델링할때 사용자가 파라미터를 직접 세팅하여 모델이 성능을 향상시킴
+
 ### __그리드 서치(Gird Search)__
 - 기존 코드) 수동으로 조정, 하나씩 값을 확인하는 형태
   - ridge(), Lasso(), alpha값 조정
   - decision tree, max_depth값 조정
-  - 현재) 파라미터 조정 자동화 --> 머신러닝 엔지니어의 일
+  - 현재) 파라미터 조정 자동화 --> 머신러닝 엔지니어가 할 일
   - [https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html](https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html)
 
 ```python

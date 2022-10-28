@@ -16,9 +16,7 @@ date: 2022-10-19
 last_modified_at: 2022-10-19
 ---
 
----
-
-# 특성공학과 규제
+# Ridge, Lasso 맛보기
 
 ---
 

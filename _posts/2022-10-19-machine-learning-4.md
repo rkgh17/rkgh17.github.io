@@ -16,8 +16,13 @@ date: 2022-10-19
 last_modified_at: 2022-10-19
 ---
 
+# 로지스틱 회귀 맛보기
 
-# __Fishes_
+---
+
+## 시작하기 전에
+
+### KNN모델을 이용한 생선예측
 
 ```python
 import pandas as pd
@@ -69,7 +74,7 @@ print(np.round(proba, decimals=4))
 ```
 ![b](/assets/images/posts_img/machine-learning-4/KNN.png)
 
-- 위 데이터셋과 같이 특성이 많으면, KNN 모델로는 특성 간의 관계나 디테일한 확률을 알기 힘듬.
+- 위 데이터셋과 같이 특성이 많으면, KNN 모델로는 특성 간의 관계나 디테일한 확률을 알기 힘들다
 - 로지스틱 회귀는 특성 간의 관계를 보여주고 특정 결과의 확률을 계산한다
 
 ---
