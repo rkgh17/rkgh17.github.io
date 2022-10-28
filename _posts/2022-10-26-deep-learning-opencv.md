@@ -1,6 +1,6 @@
 ---
-title: "OpenCV"
-excerpt: "OpenCV를 사용한 이미지 데이터 전처리"
+title: "OpenCV를 사용한 이미지 데이터 전처리"
+excerpt: "이미지 데이터 전처리 과정 학습하기"
 
 categories:
   - Deep Learning
@@ -16,7 +16,7 @@ date: 2022-10-26
 last_modified_at: 2022-10-26
 ---
 
----
+# 이미지 데이터 전처리 과정 학습하기
 
 ## 시작하기 전에
 
