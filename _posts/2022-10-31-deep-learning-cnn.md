@@ -143,7 +143,7 @@ early_stopping_cb = keras.callbacks.EarlyStopping(patience=2,
 history = model.fit(train_scaled, train_target, epochs=50,
                     validation_data = (val_scaled, val_target),
                     callbacks=[checkpoint_cb, early_stopping_cb])
-															# 모든 에포크마다 모델 저장 / 과적합 방지
+			      # 모든 에포크마다 모델 저장 / 과적합 방지
 # Epoch 1/50
 # 1500/1500 [==============================] - 17s 4ms/step - loss: 0.5243 - accuracy: 0.8132 - val_loss: 0.3264 - val_accuracy: 0.8808
 # Epoch 2/50
