@@ -24,3 +24,7 @@ categories:
       url: /categories/machine-learning/
     - title: "Deep Learning"
       url: /categories/deep-learning/
+  - title: "Spring Boot"
+    children:
+    - title: "점프 투 스프링부트"
+      url: /categories/jumptospringboot
