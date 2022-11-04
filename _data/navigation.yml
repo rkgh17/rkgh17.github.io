@@ -20,6 +20,8 @@ main:
 categories:
   - title: "Python"
     children:
+    - title: "PySpark"
+      url: /categories/pyspark/
     - title: "Machine Learning"
       url: /categories/machine-learning/
     - title: "Deep Learning"
