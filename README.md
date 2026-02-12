@@ -3,16 +3,12 @@
 [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
 [![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
 
-When installing the [**Chirpy**][chirpy] theme through [RubyGems.org][gem], Jekyll can only read files in the folders
-`_data`, `_layouts`, `_includes`, `_sass` and `assets`, as well as a small part of options of the `_config.yml` file
-from the theme's gem. If you have ever installed this theme gem, you can use the command
-`bundle info --path jekyll-theme-chirpy` to locate these files.
+[RubyGems.org][gem]를 통해 [**Chirpy**][chirpy]를 설치하면, Jekyll은 테마 젬(gem)에 포함된 `_data`, `_layouts`, `_includes`, `_sass`, `assets` 폴더와 `_config.yml` 파일의 일부 옵션만 읽을 수 있습니다.
+만약 이 테마 젬을 설치한 적이 있다면, `bundle info --path jekyll-theme-chirpy` 명령어를 사용하여 해당 파일들의 위치를 확인할 수 있습니다.
 
-The Jekyll team claims that this is to leave the ball in the user’s court, but this also results in users not being
-able to enjoy the out-of-the-box experience when using feature-rich themes.
+Jekyll 팀은 이것이 사용자의 자율성(ball in the user’s court)을 보장하기 위함이라고 설명하지만, 이는 결과적으로 사용자가 기능이 풍부한 테마를 사용할 때 '설치 즉시 완벽하게 작동하는(out-of-the-box)' 경험을 누리지 못하게 만듭니다.
 
-To fully use all the features of **Chirpy**, you need to copy the other critical files from the theme's gem to your
-Jekyll site. The following is a list of targets:
+Chirpy의 모든 기능을 온전히 사용하려면, 테마 젬에서 나머지 중요한 파일들을 직접 당신의 Jekyll 사이트로 복사해와야 합니다. 복사해야 할 대상 파일 목록은 다음과 같습니다.
 
 ```shell
 .
@@ -22,16 +18,14 @@ Jekyll site. The following is a list of targets:
 └── index.html
 ```
 
-To save you time, and also in case you lose some files while copying, we extract those files/configurations of the
-latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so that you can start writing in minutes.
+여러분의 시간을 절약하고 복사 과정에서 파일이 누락되는 것을 방지하기 위해, 우리는 Chirpy 테마 최신 버전의 해당 파일/설정들과 CD(지속적 배포) 워크플로우를 이곳에 미리 추출해 두었습니다. 덕분에 여러분은 몇 분 만에 바로 글 작성을 시작할 수 있습니다.
 
-## Usage
 
-Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
+## 사용법
+[테마 문서](https://github.com/cotes2020/jekyll-theme-chirpy/wiki)를 확인해 주세요.
 
-## Contributing
-
-This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.
+## 기여하기
+이 저장소는 테마 저장소의 새 릴리스에 맞춰 자동으로 업데이트됩니다. 문제가 발생하거나 개선에 기여하고 싶다면, [테마 저장소][chirpy]를 방문하여 피드백을 남겨주세요.
 
 ## License
 
