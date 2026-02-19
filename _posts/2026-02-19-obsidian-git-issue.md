@@ -41,7 +41,7 @@ Git에게 현 프로젝트에서 사용하는 줄바꿈을 명시해준다.
 ### **.gitattributes 파일 생성**
 루트 디렉토리에서 다음 명령어를 통해 모든 줄바꿈을 LF으로 강제한다는 규칙을 담은 파일을 생성해준다.
 
-```Bash
+```bash
 echo "* text=auto eol=lf" > .gitattributes
 ```
 
@@ -49,7 +49,7 @@ echo "* text=auto eol=lf" > .gitattributes
 
 - 해당 규칙에 맞게 파일을 정렬한다.
 
-```Bash
+```bash
 git add --renormalize
 ```
 
