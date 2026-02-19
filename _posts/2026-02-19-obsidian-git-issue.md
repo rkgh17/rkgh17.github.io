@@ -1,8 +1,8 @@
 ---
 title: '[Obsidian] Git 플러그인 "Unchanged lines" 변경 사항 이슈 해결(Windows ↔ Android 동기화)'
 date: 2026-02-19 14:11:00 +0900
-categories: [Development, Obsidian]
-tags: [Git, Troubleshooting]
+categories: [Development]
+tags: [Obsidian, Git, Troubleshooting]
 image:
     path: /assets/img/posts/20260219_1/thumbnail.png
 ---
