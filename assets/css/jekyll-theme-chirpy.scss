@@ -1,0 +1,68 @@
+---
+---
+@import 'main';
+
+/* append your custom style below */
+
+/* --- 링크 프리뷰 (북마크 카드) 디자인 --- */
+.jekyll-linkpreview-wrapper {
+  margin: 1.5rem 0;
+}
+.jekyll-linkpreview-wrapper-inner {
+  display: flex;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+  text-decoration: none !important;
+  color: inherit !important;
+  transition: background-color 0.2s;
+}
+.jekyll-linkpreview-wrapper-inner:hover {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+.jekyll-linkpreview-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.2rem;
+  flex: 1;
+  min-width: 0;
+}
+.jekyll-linkpreview-title {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin-bottom: 0.4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.jekyll-linkpreview-description {
+  font-size: 0.9em;
+  opacity: 0.8;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+.jekyll-linkpreview-footer {
+  font-size: 0.8em;
+  opacity: 0.6;
+}
+.jekyll-linkpreview-image {
+  width: 150px;
+  flex-shrink: 0;
+  border-left: 1px solid rgba(128, 128, 128, 0.2);
+}
+.jekyll-linkpreview-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0 !important;
+  border-radius: 0 !important;
+}
+@media (max-width: 600px) {
+  .jekyll-linkpreview-image {
+    display: none; /* 모바일 화면에서는 썸네일 숨김 */
+  }
+}

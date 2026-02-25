@@ -218,3 +218,9 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+# ------------------------------
+# 커스텀 플러그인 설정
+# ------------------------------
+plugins:
+  - jekyll-linkpreview
